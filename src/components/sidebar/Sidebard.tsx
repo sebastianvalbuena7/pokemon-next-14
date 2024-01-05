@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IoBrowsersOutline, IoCalculator, IoFootball, IoLogoReact } from "react-icons/io5"
+import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeart, IoLogoReact } from "react-icons/io5"
 import { SiderbarMenuItem } from "./SiderbarMenuItem";
 
 const menuItems = [
@@ -20,6 +20,12 @@ const menuItems = [
         icon: <IoFootball size={40} />,
         title: 'Pokemons',
         subTitle: 'Static Generation'
+    },
+    {
+    path: '/dashboard/favorites',
+        icon: <IoHeart size={40} />,
+        title: 'Favorites',
+        subTitle: 'Favorites Pokemons'
     }
 ];
 
@@ -48,7 +54,7 @@ export const Sidebard = () => {
                             height={50} />
                     </span>
                     <span className="text-sm md:text-base font-bold">
-                        Sebastian Valbuena
+                        Usuario Pruebas
                     </span>
                 </a>
             </div>

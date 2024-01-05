@@ -11,8 +11,8 @@ export const PokemonCard = ({ simplePokemon }: Props) => {
     const { id, name } = simplePokemon;
 
     return (
-        <div className="mx-auto right-0 mt-2 w-60">
-            <div className="flex flex-col bg-white rounded overflow-hidden shadow-lg">
+        <div className="mx-auto right-0 mt-2 w-60 rounded-xl">
+            <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg">
                 <div className="flex flex-col justify-center items-center text-center p-6 bg-gray-800 border-b">
                     <Image priority={false} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`} width={100} height={100} alt={name} />
                     <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{name}</p>
