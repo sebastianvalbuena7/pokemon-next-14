@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from './counter/counterSlice'
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+import pokemonsReducer from './pokemons/pokemonsSlice';
 
 export const store = configureStore({
     reducer: {
-        counterReducer
-    },
+        counterReducer,
+        pokemonsReducer
+    }
 })
 
 export type RootState = ReturnType<typeof store.getState>
